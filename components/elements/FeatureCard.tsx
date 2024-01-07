@@ -13,7 +13,7 @@ const AboutCard = () => {
   return (
     <Container>
       {mainInfo.map((item, index) => (
-        <Card className="mt-10 lg:h-[300px]">
+        <Card key={index} className="mt-10 lg:h-[300px]">
           <div
             className={`flex flex-col lg:h-full ${
               index % 2 === 0

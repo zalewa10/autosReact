@@ -6,7 +6,7 @@ export const OnasCard = () => {
       <div className="flex flex-col gap-3 md:gap-5">
         {onas.map((value, key) => (
           <div key={key} className="flex items-center">
-            <img src={value.imgURL} className="mr-3 h-6 md:h-8" />
+            <img src={value.imgURL} className="mr-3 h-6 md:h-8" alt="" />
             <p className="text-lg md:text-xl text-left"> {value.text}</p>
           </div>
         ))}
