@@ -4,7 +4,6 @@ import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Data from "@/components/Data";
 import Footer from "@/components/Footer";
-import Video from "@/components/Video";
 
 const inter = Inter({ subsets: ["latin"] });
 

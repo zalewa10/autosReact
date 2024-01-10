@@ -1,4 +1,5 @@
 import { onas } from "@/constants";
+import { Suspense } from "react";
 
 export const OnasCard = () => {
   return (
@@ -12,12 +13,18 @@ export const OnasCard = () => {
         ))}
       </div>
       <div className="flex flex-col gap-2 w-full md:w-2/5 mt-10 md:mt-0">
-        <iframe
-          className="h-56 lg:h-72 rounded-xl"
-          src="https://www.youtube.com/embed/NI-zikl2jQg"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
+        <Suspense
+          fallback={
+            <p className="h-[400px] w-[400px] bg-red-600">Loading feed...</p>
+          }
+        >
+          <iframe
+            className="h-56 lg:h-72 rounded-xl"
+            src="https://www.youtube.com/embed/NI-zikl2jQg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>{" "}
+        </Suspense>
         <p className="">Nasza autorska ścieżka zadań</p>
       </div>
     </div>
