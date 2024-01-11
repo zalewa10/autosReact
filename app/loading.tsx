@@ -1,8 +1,11 @@
+import { Skeleton } from "@/components/ui/skeleton";
+
 export default function Loading() {
   return (
-    <main className="text-center">
-      <h2>Loading........</h2>
-      <p>Hopefully not for too long</p>
-    </main>
+    <div>
+      <Skeleton className="h-40 w-full" />
+      <Skeleton className="h-40 w-full" />
+      <Skeleton className="h-40 w-full" />
+    </div>
   );
 }

@@ -1,4 +1,20 @@
-import { thumbnail } from "@/public/ikonki";
+import {
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  sala1,
+  sala2,
+  sala3,
+  sala4,
+  auto1,
+  auto2,
+  plac1,
+  plac2,
+  plac3,
+  plac4,
+} from "@/public/galeria/index";
 
 export const data = [{ data: "14 stycznia 2024" }];
 
@@ -86,4 +102,31 @@ export const footerText = [
     label: "BIURO",
     opis: "Kontakt telefoniczny:\n\npon-pt 8:00 - 16:00\n\ntel. 668 987 001\n\nmail: kontakt@auto-s.pl",
   },
+];
+
+export const imgCaruzela = [
+  { imgURL: img2, alt: "Zdjęcie 1" },
+  { imgURL: img3, alt: "Zdjęcie 2" },
+  { imgURL: img4, alt: "Zdjęcie 3" },
+  { imgURL: img5, alt: "Zdjęcie 4" },
+  { imgURL: img6, alt: "Zdjęcie 5" },
+];
+
+export const imgPlac = [
+  { imgURL: plac1, alt: "Zdjęcie 1" },
+  { imgURL: plac2, alt: "Zdjęcie 2" },
+  { imgURL: plac3, alt: "Zdjęcie 3" },
+  { imgURL: plac4, alt: "Zdjęcie 4" },
+];
+
+export const imgAuto = [
+  { imgURL: auto1, alt: "Zdjęcie 1" },
+  { imgURL: auto2, alt: "Zdjęcie 2" },
+];
+
+export const imgSala = [
+  { imgURL: sala1, alt: "Zdjęcie 1" },
+  { imgURL: sala2, alt: "Zdjęcie 2" },
+  { imgURL: sala3, alt: "Zdjęcie 3" },
+  { imgURL: sala4, alt: "Zdjęcie 4" },
 ];

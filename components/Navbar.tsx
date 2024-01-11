@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="sm:flex sm:justify-between py-1 border-b w-full px-10">
       <div className="relative flex h-16 items-center w-full">
         <Link href="/">
-          <Image src={logoPc} className="h-9 w-auto" alt="Logo" />
+          <Image src={logoPc} className="h-7 md:h-9 w-auto" alt="Logo" />
         </Link>
 
         <nav className="space-x-4 lg:space-x-1 hidden lg:block ml-auto">
@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center lg:hidden ml-auto">
           <Sheet>
             <SheetTrigger>
-              <Menu className="h-6 lg:hidden w-6" />
+              <Menu className="h-7 lg:hidden w-7" />
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4 pt-5">

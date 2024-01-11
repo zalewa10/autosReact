@@ -9,7 +9,7 @@ const Cennik = () => {
   return (
     <main>
       <Tabs defaultValue="manual" className="w-full">
-        <TabsList className="w-full h-full flex-col md:flex-row md:py-4">
+        <TabsList className=" md:w-full h-full flex-col md:flex-row md:py-4 ">
           <TabsTrigger value="manual">Skrzynia Manualna</TabsTrigger>
           <TabsTrigger value="automat">Skrzynia Automat</TabsTrigger>
           <TabsTrigger value="b1">Posiadacze kat. B1</TabsTrigger>
