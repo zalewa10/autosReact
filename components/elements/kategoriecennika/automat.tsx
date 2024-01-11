@@ -6,8 +6,8 @@ const Automat = () => {
   return (
     <div className="flex gap-10 flex-col md:flex-row">
       {ceny["Skrzynia Automatyczna"].map((value, key) => (
-        <Card>
-          <div key={key}>
+        <Card key={key}>
+          <div>
             <CardHeader>
               <CardTitle>
                 <h3 className="mb-4 text-2xl font-semibold">{value.name}</h3>
