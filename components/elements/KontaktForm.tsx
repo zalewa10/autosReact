@@ -66,6 +66,13 @@ const KontaktForm = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (!jeden || !dwa || !trzy) {
+      console.error("Variable 'jeden' is undefined.");
+      setLoading(false);
+      showToast("Coś poszło nie tak, spróbuj ponownie później.", false);
+      return;
+    }
+
     emailjs
       .send(
         jeden,
