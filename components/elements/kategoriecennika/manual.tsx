@@ -32,7 +32,7 @@ const Manual = () => {
                   W cenie kursu:
                 </p>
                 {value.features.map((value, key) => (
-                  <li className="flex items-center space-x-3" key={key}>
+                  <li className="flex items-center space-x-3" key={value}>
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
                       fill="currentColor"

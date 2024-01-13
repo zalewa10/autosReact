@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { routes } from "@/constants/index";
 import { logoPc } from "@/public/ikonki/index";
@@ -16,6 +17,7 @@ interface Route {
 }
 
 const Navbar: React.FC = () => {
+  const pathname = usePathname();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const closeMobileMenu = () => {
@@ -42,7 +44,9 @@ const Navbar: React.FC = () => {
             <Button asChild variant="ghost" size={"default"} key={i}>
               <Link
                 href={route.href}
-                className="text-xl font-medium transition-colors"
+                className={`text-xl font-medium transition-colors ${
+                  pathname === route.href ? "text-firma font-semibold " : ""
+                }`}
                 onClick={handleLinkClick}
               >
                 {route.label}

@@ -85,18 +85,36 @@ export function CustomForm() {
     mode: "onChange",
   });
 
-  const onSubmit = (data: CustomFormValues) => {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
-    form.reset();
-    setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 5000);
+  const onSubmit = async (data: CustomFormValues) => {
+    try {
+      const response = await fetch("/api/submitForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Form submitted successfully!",
+          description: "Your form data has been sent.",
+        });
+        form.reset();
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 5000);
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to submit form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error submitting form",
+        description: "An error occurred while submitting the form.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
