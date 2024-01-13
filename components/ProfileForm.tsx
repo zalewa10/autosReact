@@ -221,7 +221,7 @@ export function CustomForm() {
                             {option}
                           </SelectItem>
                         ) : (
-                          <Separator className="my-3" />
+                          <Separator className="my-3" key={index} />
                         )
                       )}
                     </SelectContent>
