@@ -17,10 +17,10 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 sm:gap-10 sm:grid-cols-3">
             {footerText.map((item, index) => (
               <div key={index} className="mb-8">
-                <h2 className="mb-4 text-base lg:text-lg font-semibold text-slate-100 uppercase max-w-full">
+                <h2 className="mb-4 text-base lg:text-lg font-semibold text-gray-100 uppercase">
                   {item.label}
                 </h2>
-                <ul className="text-slate-300  font-medium text-sm">
+                <ul className="text-gray-300  font-base text-sm">
                   {item.opis.split("\n").map((line, lineIndex) => (
                     <li key={lineIndex} className="mb-2">
                       {line}

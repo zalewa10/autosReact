@@ -1,30 +1,34 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Badge } from "./ui/badge";
 
 const Hero = () => {
   return (
-    <main className="bg-secondary py-28 px-10">
+    <main className="bg-secondary py-20 md:py-28 px-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-5">
-        <div className="flex flex-col items-center md:items-start justify-between gap-10 md:max-w-md lg:max-w-xl">
-          <h1 className="scroll-m-20 text-center md:text-left text-[40px] leading-tight font-extrabold tracking-tight lg:text-6xl">
-            Nie Masz Prawka?
-            <br />
-            Przyjdź Do Sławka!
-          </h1>
-          <p className="text-base leading-6 text-muted-foreground text-center md:text-left">
+        <div className="flex flex-col items-start justify-between gap-10 md:max-w-md lg:max-w-xl">
+          <div>
+            <Badge className="mb-2 bg-firma ">Szkoła nauki jazdy</Badge>
+            <h1 className="scroll-m-20 text-left text-[40px] leading-tight font-extrabold tracking-tight lg:text-6xl">
+              Nie Masz Prawka?
+              <br />
+              Przyjdź Do Sławka!
+            </h1>
+          </div>
+          <p className="text-base leading-6 text-gray-700 text-left">
             Jako szkoła jazdy jesteśmy tutaj po to, aby przeprowadzić
             profesjonalne szkolenie z zakresu prawa jazdy kategorii B. Razem
             przejdziemy przez każdy etap kursu, co doprowadzi Cię do pozytywnego
             wyniku egzaminu oraz da poczucie bezpieczeństwa za kierownicą.
           </p>
-          <div className="flex flex-row items-center justify-center md:justify-start w-full gap-4">
-            <Link href={"/zapisz"}>
+          <div className="flex flex-row items-center justify-start w-full gap-4">
+            <Link href={"/zapisz"} className="w-full md:w-auto">
               <Button size={"lg"} className="bg-firma text-lg">
                 Zapisz się
               </Button>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/"} className="w-full md:w-auto">
               <Button
                 size={"lg"}
                 className="text-white focus:ring-4 focus:outline-none bg-[#3b5998] font-medium rounded-lg text-lg px-5 py-2.5 text-center inline-flex items-center"
@@ -49,9 +53,9 @@ const Hero = () => {
         </div>
 
         <iframe
-          className="w-full md:w-2/5 lg:w-2/5 aspect-video rounded-xl"
-          src="https://www.youtube.com/embed/6vzhI7H7xgg?si=-FY1J8OAGBKFbpDg"
-          title="YouTube video player"
+          className="w-full mt-10 md:mt-0 md:w-2/5 lg:w-2/5 aspect-video rounded-xl"
+          src="https://www.youtube.com/embed/6vzhI7H7xgg?si=-FY1J8OAGBKFbpDg&autoplay=1"
+          title="Film promocyjny AUTO-S"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </div>

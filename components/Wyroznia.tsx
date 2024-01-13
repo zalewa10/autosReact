@@ -4,12 +4,12 @@ import AboutCard from "./elements/AboutCard";
 
 export const Wyroznia = () => {
   return (
-    <main className="py-28 px-8 bg-tlo">
+    <main className="py-8 px-8 bg-tlo">
       <Container>
-        <div className="sm:px-6 lg:px-8 flex flex-col md:flex-row items-center w-full">
+        <div className="flex flex-col md:flex-row items-center w-full">
           <div className="flex flex-col items-start gap-6 w-full">
-            <h1 className="scroll-m-20 text-center md:text-left text-4xl font-extrabold tracking-tight lg:text-6xl w-full text-muted">
-              Co nas wyróżnia
+            <h1 className="scroll-m-20 text-left text-4xl font-extrabold tracking-tight lg:text-6xl w-full text-muted">
+              Co nas wyróżnia:
             </h1>
             <AboutCard />
           </div>

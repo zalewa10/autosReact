@@ -13,9 +13,11 @@ import sala1 from "./sala1.jpg";
 import sala2 from "./sala2.jpg";
 import sala3 from "./sala3.jpg";
 import sala4 from "./sala4.jpg";
+import szefito from "./szefito.jpg";
 
 export {
   img2,
+  szefito,
   img3,
   img4,
   img5,

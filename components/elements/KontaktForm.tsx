@@ -127,7 +127,7 @@ const KontaktForm = () => {
               className="md:flex md:flex-col md:justify-between"
               id="contact-form"
             >
-              <div className="md:space-y-4">
+              <div className="md:space-y-4 mt-3">
                 <div className="md:flex md:flex-row md:items-center md:space-x-4">
                   <div>
                     <Label htmlFor="name">Imię</Label>

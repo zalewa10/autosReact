@@ -29,12 +29,12 @@ export const routes = [
 ];
 export const mainInfo = [
   {
-    imgURL: "https://placehold.co/600x400",
+    imgURL: "/ikonki/automat.jpg",
     label: "Skrzynia manualna czy automat?",
     text: "Jako prężnie działający ośrodek, zapewniamy szeroki wybór szkoleń w zakresie prawa jazdy kategorii B. Wykorzystujemy pojazdy z automatyczną i manualną skrzynią biegów. Zachęcamy do sprawdzenia naszej oferty szkolenia na nowym automacie Hyundai i20 - rok produkcji 2023!",
   },
   {
-    imgURL: "https://placehold.co/600x400",
+    imgURL: "/ikonki/tlo.jpg",
     label: "Elastyczny grafik",
     text: "W naszej szkole wiemy, że każdy z Was ma swoje mniej lub bardziej ważne sprawy, dlatego harmonogram szkolenia ustalamy elastycznie dopasowując się do preferencji kursanta. W ten sposób zapewniamy komfort i maksymalną skuteczność w nauce jazdy.",
   },

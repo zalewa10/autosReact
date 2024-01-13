@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="sm:flex sm:justify-between py-1 border-b w-full px-4 md:px-10">
+    <header className="sm:flex sm:justify-between py-1 border-b w-full px-8 md:px-10">
       <div className="relative flex h-16 items-center w-full">
         <Link href="/">
           <Image src={logoPc} className="h-7 md:h-9 w-auto" alt="Logo" />
