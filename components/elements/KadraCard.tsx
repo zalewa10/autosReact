@@ -19,7 +19,7 @@ const KadraCard = () => {
             <Image src={value.imgURL} alt={value.imie} />
           </CardHeader>
           <CardContent>
-            <CardDescription>{value.rola}</CardDescription>
+            {value.rola}
             <CardTitle>{value.imie}</CardTitle>
           </CardContent>
           <CardFooter>

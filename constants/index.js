@@ -38,11 +38,6 @@ export const mainInfo = [
     label: "Elastyczny grafik",
     text: "W naszej szkole wiemy, że każdy z Was ma swoje mniej lub bardziej ważne sprawy, dlatego harmonogram szkolenia ustalamy elastycznie dopasowując się do preferencji kursanta. W ten sposób zapewniamy komfort i maksymalną skuteczność w nauce jazdy.",
   },
-  {
-    imgURL: "https://placehold.co/600x400",
-    label: "Obszar działalności",
-    text: "Skórzewo, Plewiska, Przeźmierowo, Poznań oraz pozostałe miejscowości w gminach: Dopiewo, Tarnowo Podgórne, Komorniki (poprzez kliknięcie w pinezkę, można sprawdzić miejsca w których rozpoczynamy jazdy podczas szkolenia praktycznego).",
-  },
 ];
 export const product = [
   {

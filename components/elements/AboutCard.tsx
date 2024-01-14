@@ -22,7 +22,7 @@ const AboutCard = () => {
           </CardContent>
 
           <CardFooter>
-            <CardDescription className="text-gray-300 text-base">
+            <CardDescription className="text-gray-300 text-[0.9rem] leading-5">
               {route.subtext}
             </CardDescription>
           </CardFooter>
