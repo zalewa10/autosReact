@@ -125,7 +125,6 @@ export default function PigeonMap() {
               defaultZoom={12}
               minZoom={12}
               maxZoom={16}
-              twoFingerDrag={mapActive}
               touchEvents={mapActive}
               mouseEvents={mapActive}
             >
