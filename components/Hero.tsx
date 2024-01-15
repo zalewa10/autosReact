@@ -58,7 +58,7 @@ const Hero = () => {
 
         <iframe
           className="w-full mt-10 md:mt-0 md:w-2/5 lg:w-2/5 aspect-video rounded-xl"
-          src="https://www.youtube.com/embed/6vzhI7H7xgg?si=-FY1J8OAGBKFbpDg&autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/6vzhI7H7xgg?si=-FY1J8OAGBKFbpDg&autoplay=1&mute=1&rel=0"
           title="Film promocyjny AUTO-S"
           allowFullScreen={true}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
