@@ -221,7 +221,7 @@ export function CustomForm() {
             <Input
               id="tel"
               type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="[0-9\s]{9,13}"
               name="tel"
               value={form.tel}
               onChange={handleChange}

@@ -26,13 +26,15 @@ const Navbar: React.FC = () => {
           <Image src={logoPc} className="h-7 md:h-9 w-auto" alt="Logo" />
         </Link>
 
-        <nav className="space-x-4 lg:space-x-1 hidden lg:block ml-auto">
+        <nav className="space-x-4  lg:space-x-1 hidden lg:block ml-auto">
           {routes.map((route: Route, i: number) => (
             <Button asChild variant="ghost" size={"default"} key={i}>
               <Link
                 href={route.href}
-                className={`text-xl font-medium transition-colors ${
-                  pathname === route.href ? "text-firma font-semibold " : ""
+                className={`text-xl  font-medium transition-colors ${
+                  pathname === route.href
+                    ? " underline underline-offset-4 font-semibold"
+                    : ""
                 }`}
               >
                 {route.label}
