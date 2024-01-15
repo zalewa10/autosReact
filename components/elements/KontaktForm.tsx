@@ -4,12 +4,22 @@ import React, { useRef, useState, ChangeEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
+import Confetti from "react-confetti";
+import styled from "styled-components";
 import { Label } from "../ui/label";
 import emailjs from "@emailjs/browser";
-import Confetti from "react-confetti";
 import { useToast } from "../ui/use-toast";
-import styled from "styled-components";
 import { Card, CardHeader, CardTitle } from "../ui/card";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "../ui/collapsible";
+import { Checkbox } from "../ui/checkbox";
+
+const jeden = process.env.NEXT_PUBLIC_JEDEN;
+const dwa = process.env.NEXT_PUBLIC_DWA;
+const trzy = process.env.NEXT_PUBLIC_TRZY;
 
 const ConfettiContainer = styled.div`
   position: fixed;
@@ -17,13 +27,9 @@ const ConfettiContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Ensure the confetti doesn't interfere with user interactions */
-  z-index: 999; /* Adjust the z-index to ensure the confetti is above other elements */
+  pointer-events: none;
+  z-index: 999;
 `;
-
-const jeden = process.env.NEXT_PUBLIC_JEDEN;
-const dwa = process.env.NEXT_PUBLIC_DWA;
-const trzy = process.env.NEXT_PUBLIC_TRZY;
 
 const KontaktForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -33,9 +39,9 @@ const KontaktForm = () => {
     message: "",
     surname: "",
   });
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const [loading, setLoading] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
   const { toast } = useToast();
 
   const handleChange = (
@@ -112,24 +118,25 @@ const KontaktForm = () => {
 
   return (
     <Card className="h-full w-full">
-      <div className="md:flex  justify-end">
-        <ConfettiContainer>{showConfetti && <Confetti />}</ConfettiContainer>
-        <div className="md:flex md:flex-row md:justify-between md:items-center md:gap-4 md:w-full">
-          <CardHeader>
+      <ConfettiContainer>{showConfetti && <Confetti />}</ConfettiContainer>
+
+      <div className="md:flex justify-center w-full">
+        <div className="md:flex md:flex-row md:justify-between md:items-center md:gap-4 w-full">
+          <CardHeader className="w-full">
             <CardTitle>
-              <p className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 ">
+              <p className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900">
                 Formularz kontaktowy
               </p>
             </CardTitle>
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="md:flex md:flex-col md:justify-between"
+              className="md:flex md:flex-col md:justify-between "
               id="contact-form"
             >
               <div className="md:space-y-4 mt-3">
                 <div className="md:flex md:flex-row md:items-center md:space-x-4">
-                  <div>
+                  <div className="md:w-full">
                     <Label htmlFor="name">Imię</Label>
                     <Input
                       id="name"
@@ -141,7 +148,7 @@ const KontaktForm = () => {
                     />
                   </div>
 
-                  <div className="mt-3 md:mt-0">
+                  <div className="mt-3 md:mt-0 md:w-full">
                     <Label htmlFor="surname">Nazwisko</Label>
                     <Input
                       id="surname"
@@ -178,10 +185,35 @@ const KontaktForm = () => {
                     required={true}
                   />
                 </div>
+                <Collapsible>
+                  <div className="flex items-center">
+                    <CollapsibleTrigger>
+                      <Checkbox id="terms" required={true} />
+                    </CollapsibleTrigger>
+                    <label
+                      htmlFor="terms"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ml-2"
+                    >
+                      Zaznacz, aby zaakceptować
+                    </label>
+                  </div>
+                  <CollapsibleContent>
+                    <p className="text-xs text-muted-foreground">
+                      Wyrażam zgodę na przetwarzanie przez OSK Auto-S Sławomir
+                      Pługowski z siedzibą w Skórzewie, ul. Jesienna 18, 60-185
+                      Skórzewo, moich danych osobowych zawartych w formularzu
+                      zgłoszenia w zakresie niezbędnym do zapisu na kurs prawa
+                      jazdy. Podanie danych jest dobrowolne jednak ułatwia
+                      kontakt w procesie rekrutacji. Przysługuje Pani/Panu prawo
+                      wglądu do treści swoich danych osobowych i ich poprawiania
+                      oraz żądania zaprzestania ich przetwarzania.
+                    </p>
+                  </CollapsibleContent>
+                </Collapsible>
               </div>
               <Button
                 type="submit"
-                className="mt-6 w-full md:w-1/4 text-md"
+                className="mt-6 w-full md:w-1/4 text-md bg-firma"
                 size="lg"
               >
                 {loading ? "Wysyłanie..." : "Wyślij"}

@@ -10,12 +10,10 @@ const page = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
               Kursy prawa jazdy kategorii B
             </h2>
-            <p className="mb-5 font-light text-gray-500 sm:text-xl">
+            <p className="mt-10 font-normal text-gray-500 sm:text-xl">
               Kandydat na kierowcę może rozpocząć kurs mając 17 lat i 9 m-cy za
               zgodą rodziców lub opiekunów oraz samodzielnie po ukończonym 18
-              roku życia.
-            </p>
-            <p className="mb-5 font-light text-gray-500 sm:text-xl">
+              roku życia. <br />
               <b>Sprawdź ofertę, informacje dodatkowe oraz ważne informacje</b>
             </p>
           </div>

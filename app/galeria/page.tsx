@@ -59,7 +59,7 @@ const Galeria = () => {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
             Sala wykładowa
           </h2>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
+          <p className="mb-5  font-light text-gray-600 sm:text-xl">
             Posiadamy własną, klimatyzowaną i odpowiednio wyposażoną salę
             wykładową w Skórzewie. Prowadzimy zajęcia teoretyczne dla
             pojedynczych osób oraz zorganizowanych grup.
@@ -86,7 +86,7 @@ const Galeria = () => {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
             Plac manewrowy
           </h2>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
+          <p className="mb-5  font-light text-gray-600 sm:text-xl">
             Dysponujemy własnym, profesjonalnie urządzonym, wyposażonym i
             oświetlonym placem manewrowym w Skórzewie. Obiekt został
             przygotowany na wzór placu jaki znajduje się w Wojewódzkim Ośrodku
@@ -115,7 +115,7 @@ const Galeria = () => {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
             Pojazdy szkoleniowe
           </h2>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
+          <p className="mb-5  font-light text-gray-600 sm:text-xl">
             Kia Rio 4 oraz Hyuandai i20 (wersje egzaminacyjne)
           </p>
         </div>

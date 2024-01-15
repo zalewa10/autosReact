@@ -16,15 +16,15 @@ const Zapisy = () => {
             </h2>
           </CardHeader>
 
-          <div className="flex flex-col md:flex-row justify-between gap-5 p-5">
-            <div className="md:w-1/2">
+          <div className="flex flex-col lg:flex-row justify-between gap-5 p-5 px-8">
+            <div className="lg:w-1/2">
               <CustomForm />
             </div>
-            <div className="md:w-1/2">
+            <div className="lg:w-1/2">
               <Image
                 src={szefito}
                 alt="Szef AUTO-S - Sławomir Pługowski"
-                className="hidden md:block w-auto ml-auto rounded-xl"
+                className="hidden lg:block w-auto ml-auto rounded-xl"
               />
             </div>
           </div>

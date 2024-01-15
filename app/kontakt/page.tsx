@@ -7,10 +7,10 @@ const Kontakt = () => {
     <section className="bg-secondary">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="flex mb-5 mx-auto flex-col md:flex-row justify-between gap-10">
-          <div className="md:w-2/3">
+          <div className="md:w-1/2">
             <KontaktInfo />
           </div>
-          <div className="md:w-1/3">
+          <div className="md:w-1/2">
             <KontaktForm />
           </div>
         </div>

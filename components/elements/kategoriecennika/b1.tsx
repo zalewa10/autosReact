@@ -4,52 +4,73 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const B1 = () => {
   return (
-    <div className="flex gap-10 flex-col md:flex-row">
+    <div className="grid py-10 gap-10 grid-cols-1 md:grid-cols-2">
       {ceny["Posiadacze kat. B1"].map((value, key) => (
-        <Card key={key}>
-          <div>
-            <CardHeader>
-              <CardTitle>
-                <h3 className="mb-4 text-2xl font-semibold">{value.name}</h3>
-              </CardTitle>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                {value.autoOpis}
+        <Card key={key} className={`max-w-[350px]`}>
+          <CardHeader>
+            <CardTitle>
+              <p className="mb-4 text-xl font-semibold text-gray-700">
+                {value.name}
               </p>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                <b> {value.auto}</b>
-              </p>
-            </CardHeader>
-
-            <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">
+            </CardTitle>
+            <div className="flex justify-start items-baseline my-8">
+              <span className="mr-2 text-3xl font-extrabold">
                 {value.price}
               </span>
             </div>
-            <CardContent>
-              <ul role="list" className="mb-8 space-y-4 text-left">
-                <p className="font-light text-black-400 sm:text-lg mt-3">
-                  W cenie kursu:
-                </p>
-                {value.features.map((value, key) => (
-                  <li className="flex items-center space-x-3" key={value}>
-                    <svg
-                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>{value}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </div>
+          </CardHeader>
+
+          <CardContent>
+            <ul role="list" className="mb-8 space-y-4 text-left">
+              <p className="font-light text-black-400 sm:text-lg mt-3">
+                W cenie kursu:
+              </p>
+              {value.features.map((value, key) => (
+                <li className="flex items-start space-x-2" key={key}>
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  <p className="font-normal text-sm">{value}</p>
+                </li>
+              ))}
+              {value.express && (
+                <ul>
+                  {value.express.map((item, key) => (
+                    <li className="flex items-start space-x-2" key={key}>
+                      <svg
+                        className="flex-shrink-0 w-5 h-5 text-red-500 dark:text-red-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50%"
+                          y="50%"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          fontSize="20"
+                          fontWeight="bold"
+                          fill="currentColor"
+                        >
+                          !
+                        </text>
+                      </svg>
+                      <p className="font-normal text-sm">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </ul>
+          </CardContent>
         </Card>
       ))}
     </div>

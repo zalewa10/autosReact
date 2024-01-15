@@ -1,5 +1,6 @@
 import React from "react";
 import { footerText } from "@/constants";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -34,7 +35,11 @@ const Footer = () => {
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" className="text-white hover:text-blue-400">
               <div className="flex gap-2">
-                <p className="text-sm">Sprawdź naszego Facebooka</p>
+                <p className="text-sm">
+                  <Link href="https://kzalewski.vercel.app" target="_onBlank">
+                    Projekt i wykonanie <b>KZALEWSKI</b>
+                  </Link>
+                </p>
               </div>
             </a>
           </div>

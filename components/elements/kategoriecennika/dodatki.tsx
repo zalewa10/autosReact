@@ -11,30 +11,25 @@ import {
 
 const Dodatki = () => {
   return (
-    <div className="flex gap-10 flex-col md:flex-row">
+    <div className="grid py-10 gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {ceny["Szkolenia uzupełniające"].map((value, key) => (
-        <Card key={key}>
-          <div>
-            <CardHeader>
-              <CardTitle>
-                <h3 className="mb-4 text-2xl font-semibold">{value.name}</h3>
-              </CardTitle>
-            </CardHeader>
-
-            <div className="flex justify-center items-baseline my-8">
-              <CardContent>
-                <span className="mr-2 text-5xl font-extrabold">
-                  {value.price}
-                </span>
-                <span className="mr-2 text-5xl font-extrabold">
-                  {value.czas}
-                </span>
-              </CardContent>{" "}
+        <Card key={key} className={`max-w-[350px]`}>
+          <CardHeader>
+            <CardTitle>
+              <p className="mb-4 text-xl font-semibold text-gray-700">
+                {value.name}
+              </p>
+            </CardTitle>
+            <div className="flex justify-start items-end my-8">
+              <span className="mr-2 text-3xl font-extrabold">
+                {value.price}
+              </span>
+              <span className="mr-2 text-xl font-normal">{value.czas}</span>
             </div>
-            <CardFooter>
-              <p>{value.features}</p>
-            </CardFooter>
-          </div>
+          </CardHeader>
+          <CardFooter>
+            <p className="font-light">{value.features}</p>
+          </CardFooter>
         </Card>
       ))}
     </div>

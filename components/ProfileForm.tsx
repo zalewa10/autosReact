@@ -221,6 +221,7 @@ export function CustomForm() {
             <Input
               id="tel"
               type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               name="tel"
               value={form.tel}
               onChange={handleChange}
@@ -261,17 +262,18 @@ export function CustomForm() {
           </div>
 
           <div className="items-top flex mt-3 space-x-2">
-            <Checkbox id="terms" required={true} />
-            <div className="grid gap-1.5 leading-none"></div>
             <Collapsible>
-              <CollapsibleTrigger>
+              <div className="flex items-center">
+                <CollapsibleTrigger>
+                  <Checkbox id="terms" required={true} />
+                </CollapsibleTrigger>
                 <label
                   htmlFor="terms"
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ml-2"
                 >
-                  Zaznacz, aby zaakcpetować
+                  Zaznacz, aby zaakceptować
                 </label>
-              </CollapsibleTrigger>
+              </div>
               <CollapsibleContent>
                 <p className="text-xs text-muted-foreground">
                   Wyrażam zgodę na przetwarzanie przez OSK Auto-S Sławomir

@@ -2,8 +2,9 @@ export const ceny = {
   "Skrzynia Manualna": [
     {
       name: "Kurs Podstawowy",
-      price: "3300zł",
+      price: "3300 zł",
       features: [
+        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x45 min.)",
@@ -12,12 +13,12 @@ export const ceny = {
         "Możliwość odbycia min. 2 godzin jazdy z automatyczną skrzynią biegów – dla chętnych",
         "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
       ],
-      express: [""],
     },
     {
       name: "Kurs Rozszerzony",
-      price: "3600zł",
+      price: "3600 zł",
       features: [
+        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x 45min.)",
@@ -27,12 +28,12 @@ export const ceny = {
         "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
         "4 dodatkowe godziny jazdy (1x60min.), przed egzaminem państwowym",
       ],
-      express: [""],
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
-      price: "4000zł",
+      price: "4000 zł",
       features: [
+        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x 45min.)",
@@ -44,25 +45,11 @@ export const ceny = {
         ,
       ],
       express: [
-        "Ilość miejsc ograniczona",
-        "Potwierdź telefonicznie dostępność!",
+        "Ilość miejsc ograniczona - potwierdź telefonicznie dostępność!",
       ],
     },
   ],
   "Posiadacze kat. B1": [
-    {
-      name: "Kurs podstawowy – skrzynia automat",
-      price: "2400zł",
-      auto: "HYUNDAI i20",
-      autoOpis: "Egzamin państwowy na naszym pojeździe!",
-      features: [
-        "Badania lekarskie - jeśli będzie konieczność wykonania",
-        "20 godzin - jazdy (1x60 min.)",
-        "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
-        "Pierwsze podstawienie pojazdu na egzamin państwowy do WORD",
-        "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
-      ],
-    },
     {
       name: "Kurs podstawowy - skrzynia manualna",
       price: "2200zł",
@@ -74,6 +61,19 @@ export const ceny = {
         "Możliwość odbycia min. 2 godzin jazdy z automatyczną skrzynią biegów – dla chętnych",
         "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
       ],
+    },
+    {
+      name: "Kurs podstawowy – skrzynia automat",
+      price: "2400zł",
+      auto: "HYUNDAI i20",
+      autoOpis: "Egzamin państwowy na naszym pojeździe!",
+      features: [
+        "Badania lekarskie - jeśli będzie konieczność wykonania",
+        "20 godzin - jazdy (1x60 min.)",
+        "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
+        "Pierwsze podstawienie pojazdu na egzamin państwowy do WORD",
+      ],
+      express: ["Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł"],
     },
   ],
   "Skrzynia Automatyczna": [
@@ -91,7 +91,6 @@ export const ceny = {
         "Drugie podstawienie pojazdu do WORD w przypadku poprawki",
         "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
       ],
-      express: [""],
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
@@ -108,8 +107,7 @@ export const ceny = {
         "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
       ],
       express: [
-        "Ilość miejsc ograniczona",
-        "Potwierdź telefonicznie dostępność!",
+        "Ilość miejsc ograniczona - potwierdź telefonicznie dostępność!",
       ],
     },
   ],
@@ -118,19 +116,19 @@ export const ceny = {
       name: "1 dodatkowa godzina teorii",
       price: "50zł",
       czas: "/ 45min",
-      features: [],
+      features: ["Płatność jednorazowa"],
     },
     {
       name: "1 dodatkowa godzina praktyki",
       price: "110zł",
       czas: "/ 60min",
-      features: [],
+      features: ["Płatność jednorazowa"],
     },
     {
       name: "PAKIET - 10 dodatkowych jazd",
       price: "1000zł",
       czas: "/ 10x60min",
-      features: ["Obowiązuje przy płatności jednorazowej"],
+      features: ["Płatność jednorazowa"],
     },
   ],
 };

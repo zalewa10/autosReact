@@ -4,12 +4,14 @@ import Automat from "./elements/kategoriecennika/automat";
 import B1 from "./elements/kategoriecennika/b1";
 import Dodatki from "./elements/kategoriecennika/dodatki";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import Image from "next/image";
+import { grid, pkk, przelew } from "@/public/ikonki";
+import { Separator } from "./ui/separator";
 const Cennik = () => {
   return (
     <main>
       <Tabs defaultValue="manual" className="w-full">
-        <TabsList className=" md:w-full h-full flex-col md:flex-row md:py-4 ">
+        <TabsList className="w-full h-full flex md:justify-center md:py-4">
           <TabsTrigger value="manual">Skrzynia Manualna</TabsTrigger>
           <TabsTrigger value="automat">Skrzynia Automat</TabsTrigger>
           <TabsTrigger value="b1">Posiadacze kat. B1</TabsTrigger>
@@ -30,66 +32,100 @@ const Cennik = () => {
         </TabsContent>
       </Tabs>
       <div>
-        <div className="mx-auto text-center mb-8 lg:mb-12">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-            Płatność i raty
-          </h2>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
-            Płatności za wybrany rodzaj kursu można dokonać za pośrednictwem
-            przelewu tradycyjnego, poprzez BLIK bądź bezpośrednio w biurze.
-            Możliwość opłaty w ratach.
-            <b>
+        <div className="w-full flex justify-between items-center gap-5 bg-tlo px-8 lg:mb-12 py-9">
+          <div className="md:w-2/3">
+            <h2 className="mb-5 text-3xl md:text-4xl py-4 tracking-tight font-extrabold text-gray-100">
+              Płatność i raty
+            </h2>
+            <p className="mb-5 font-light text-gray-300 sm:text-xl">
+              Płatności za wybrany rodzaj kursu można dokonać za pośrednictwem
+              przelewu tradycyjnego, poprzez BLIK bądź bezpośrednio w biurze. W
+              tytule przelewu proszę podać: imię, nazwisko oraz wybrany kurs.
+              Możliwość opłaty w ratach. Dodatkowych informacji odnośnie rat
+              udzielamy telefonicznie.
+            </p>
+
+            <p className="mb-5 font-bold text-gray-300 sm:text-xl">
               W przypadku płatności ratalnej do ceny każdego rodzaju kursu
               doliczamy 100 zł.
-            </b>
-            Dodatkowych informacji odnośnie rat udzielamy telefonicznie.
-          </p>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
-            <b>Płatność przelewem - numer rachunku bankowego:</b> <br />
-            Bank Pekao nr 05 1240 6540 1111 0011 2212 8760 <br />
-            <br />W tytule proszę podać imię i nazwisko kandydata na kierowcę
-            oraz rodzaj wybranego kursu (np. Jan Kowalski Podstawowy Automat)
-          </p>
-          <p className="mb-5 font-light text-gray-500 sm:text-xl">
-            <b>Płatność BLIK - numer telefonu:</b> <br />
-            509 211 676
-          </p>
+            </p>
+            <div>
+              <div className="mb-5 font-light text-gray-300 sm:text-xl">
+                <span className="font-bold">
+                  Płatność przelewem - numer rachunku bankowego:
+                </span>
+                <br />
+                Bank Pekao nr 05 1240 6540 1111 0011 2212 8760
+                <br />
+                <br />
+                <span className="font-bold">
+                  Płatność BLIK - numer telefonu:
+                </span>{" "}
+                <br />
+                509 211 676
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden w-1/3 md:flex justify-end">
+            <Image
+              src={przelew}
+              className="h-auto w-auto"
+              alt="Zdjęcie przykładowego przelewu"
+            />
+          </div>
         </div>
+
         <section className="bg-white">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div className="mx-auto text-center mb-8 lg:mb">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <div className="w-full flex md:text-end flex-row-reverse justify-between items-center gap-5 px-8 lg:mb-12 py-9">
+            <div className="md:w-2/3">
+              <h2 className="mb-5 text-3xl md:text-4xl py-4 tracking-tight font-extrabold ">
                 Profil Kandydata na Kierowcę (PKK)
               </h2>
-              <p className="mb-5 font-light text-gray-500 sm:text-xl">
-                Możliwość utworzenia za Ciebie profilu kandydata w Starostwie
-                Powiatowym – Poznań. <br />
-                Opłata skarbowa za pełnomocnictwo 17 zł. <br />
+              <p className="mb-5  font-light text-gray-600 sm:text-xl">
+                Oferujemy możliwość utworzenia za Ciebie profilu kandydata na
+                kierowcę w Starostwie Powiatowym – Poznań. <br /> <br />
+                Opłata skarbowa za pełnomocnictwo wynosi<b> 17 zł.</b> <br />
                 Przy samodzielnym otwarciu profilu – bez kosztów pełnomocnictwa.
               </p>
-              <p className="mb-5 font-light text-gray-500 sm:text-xl">
-                Jeżeli posiadasz PKK (profil kandydata) / badania lekarskie -
-                <b>to cena kursu zostaje obniżona o 100zł!</b>
+              <p className="mb-5 font-light text-gray-600 sm:text-xl">
+                Jeżeli posiadasz PKK / badania lekarskie to {""}
+                <span className="font-bold">
+                  cena kursu zostaje obniżona o 100zł!
+                </span>
               </p>
+            </div>
+            <div className="hidden w-1/3 md:flex justify-start">
+              <Image
+                src={pkk}
+                alt="Samochód szkoleniowy AUTO-S"
+                className="w-auto h-auto rounded-xl"
+              />
             </div>
           </div>
         </section>
-        <section className="bg-destructive">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div className="mx-auto text-center mb-8 lg:mb-12 ">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
-                ! WAŻNE INFORMACJE !
-              </h2>
-              <p className="mb-5 font-light text-white sm:text-xl">
-                Za niestawienie się w danym dniu na jazdy w OSK Auto-S,
-                <b> obowiązuje dodatkowa opłata – 100 zł </b> za każdą
-                zaplanowaną godzinę jazdy. <br />
-                Szkolony może odwołać lub przełożyć jazdy bez ponoszenia opłaty,
-                po poinformowaniu dzień wcześniej do godziny 18:00 o nie
-                pojawieniu się na jazdach. <br />
-                <b> SZANUJMY WSPÓLNY CZAS.</b>
-              </p>
 
+        <section className="bg-firma">
+          <div className="w-full md:text-center px-8  py-9">
+            <h2 className="mb-5 text-3xl md:text-4xl py-4 tracking-tight font-extrabold text-gray-100">
+              WAŻNE INFORMACJE
+            </h2>
+            <div className="md:px-5">
+              <p className="mb-5 font-light  text-white sm:text-xl">
+                Za niestawienie się w danym dniu na jazdy w OSK Auto-S,
+                <span className="font-bold">
+                  {" "}
+                  obowiązuje dodatkowa opłata – 100 zł{" "}
+                </span>{" "}
+                za każdą zaplanowaną godzinę jazdy. Szkolony może odwołać lub
+                przełożyć jazdy bez ponoszenia opłaty, po poinformowaniu dzień
+                wcześniej do godziny 18:00 o nie pojawieniu się na jazdach.
+                <br />
+              </p>
+              <span className="font-bold py-5 text-white sm:text-xl">
+                SZANUJMY WSPÓLNY CZAS.
+              </span>
+              <Separator className="my-5" />
               <p className="mb-5 font-light text-white sm:text-xl">
                 Osoby szkolone które wniosły pełną lub ratalną opłatę za kurs w
                 przypadku nie przystąpienia lub przerwania szkolenia przez okres
