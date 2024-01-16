@@ -6,7 +6,7 @@ const B1 = () => {
   return (
     <div className="grid py-10 gap-10 grid-cols-1 md:grid-cols-2">
       {ceny["Posiadacze kat. B1"].map((value, key) => (
-        <Card key={key} className={`max-w-[350px]`}>
+        <Card key={key} className={`max-w-[350px] md:max-w-[400px]`}>
           <CardHeader>
             <CardTitle>
               <p className="mb-4 text-xl font-semibold text-gray-700">
@@ -70,6 +70,10 @@ const B1 = () => {
                 </ul>
               )}
             </ul>
+            <span className="text-base  flex justify-center text-center font-light">
+              {value.autoOpis} <br />
+              {value.auto}
+            </span>
           </CardContent>
         </Card>
       ))}

@@ -187,17 +187,19 @@ export function CustomForm() {
                 id="adress"
                 type="text"
                 name="adress"
+                placeholder="np. Jesienna 18"
                 value={form.adress}
                 onChange={handleChange}
                 required={true}
               />
             </div>
             <div className="mt-3 md:mt-0 w-full">
-              <Label htmlFor="city">Miasto</Label>
+              <Label htmlFor="city">Miejscowość</Label>
               <Input
                 id="city"
                 type="text"
                 name="city"
+                placeholder=""
                 value={form.city}
                 onChange={handleChange}
                 required={true}

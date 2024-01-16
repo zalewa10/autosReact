@@ -115,7 +115,7 @@ export default function PigeonMap() {
     }
   }, [mapActive]);
   return (
-    <main className="pb-10 px-8 w-full mt-3">
+    <main className="pb-10 px-8 w-full mt-3 ">
       <div className="flex flex-col md:flex-row items-start gap-6 ">
         <Card className="lg:h-[400px] flex flex-col relative md:flex-row w-full">
           <div className="relative md:w-1/2">

@@ -5,12 +5,12 @@ import B1 from "./elements/kategoriecennika/b1";
 import Dodatki from "./elements/kategoriecennika/dodatki";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
-import { grid, pkk, przelew } from "@/public/ikonki";
+import { pkk, przelew } from "@/public/ikonki";
 import { Separator } from "./ui/separator";
 const Cennik = () => {
   return (
     <main>
-      <Tabs defaultValue="manual" className="w-full">
+      <Tabs defaultValue="manual" className="w-ful">
         <TabsList className="w-full h-full flex md:justify-center md:py-4">
           <TabsTrigger value="manual">Skrzynia Manualna</TabsTrigger>
           <TabsTrigger value="automat">Skrzynia Automat</TabsTrigger>
@@ -31,6 +31,7 @@ const Cennik = () => {
           <Dodatki />
         </TabsContent>
       </Tabs>
+
       <div>
         <div className="w-full flex justify-between items-center gap-5 bg-tlo px-8 lg:mb-12 py-9">
           <div className="md:w-2/3">

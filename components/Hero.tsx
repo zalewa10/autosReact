@@ -5,7 +5,7 @@ import { Badge } from "./ui/badge";
 
 const Hero = () => {
   return (
-    <main className="bg-secondary py-16 md:py-28 px-8">
+    <main className="bg-gray-50 py-16 md:py-28 px-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-5">
         <div className="flex flex-col items-start justify-between gap-10 md:max-w-md lg:max-w-xl">
           <div>

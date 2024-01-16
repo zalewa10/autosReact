@@ -3,8 +3,9 @@ export const ceny = {
     {
       name: "Kurs Podstawowy",
       price: "3300 zł",
+      auto: "KIA RIO",
+      autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
-        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x45 min.)",
@@ -17,8 +18,9 @@ export const ceny = {
     {
       name: "Kurs Rozszerzony",
       price: "3600 zł",
+      auto: "KIA RIO",
+      autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
-        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x 45min.)",
@@ -32,8 +34,9 @@ export const ceny = {
     {
       name: "Kurs Express - jazdy w 16 dni!",
       price: "4000 zł",
+      auto: "KIA RIO",
+      autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
-        "Egzamin państwowy na pojeździe WORD - KIA RIO",
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
         "26 godzin - wykłady (1x 45min.)",
@@ -80,6 +83,8 @@ export const ceny = {
     {
       name: "Kurs Podstawowy",
       price: "3600zł",
+      auto: "HYUNDAI i20",
+      autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
@@ -89,12 +94,14 @@ export const ceny = {
         "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
         "Pierwsze podstawienie pojazdu na egzamin państwowy do WORD",
         "Drugie podstawienie pojazdu do WORD w przypadku poprawki",
-        "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
       ],
+      express: ["Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł"],
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
       price: "4000zł",
+      auto: "HYUNDAI i20",
+      autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
         "Badania lekarskie - na miejscu",
         "Materiały dydaktyczne",
@@ -104,9 +111,9 @@ export const ceny = {
         "Egzamin wewnętrzny po zakończeniu szkolenia (teoria + praktyka)",
         "Pierwsze podstawienie pojazdu na egzamin państwowy do WORD",
         "Drugie podstawienie pojazdu do WORD w przypadku poprawki",
-        "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
       ],
       express: [
+        "Każde kolejne podstawienie pojazdu do WORD to koszt 200 zł",
         "Ilość miejsc ograniczona - potwierdź telefonicznie dostępność!",
       ],
     },

@@ -3,6 +3,8 @@ import img3 from "./img3.jpg";
 import img4 from "./img4.jpg";
 import img5 from "./img5.jpg";
 import img6 from "./img6.jpg";
+import img7 from "./img7.jpg";
+import img8 from "./img8.jpg";
 import auto1 from "./auto1.jpg";
 import auto2 from "./auto2.jpg";
 import plac1 from "./plac1.jpg";
@@ -22,6 +24,8 @@ export {
   img4,
   img5,
   img6,
+  img7,
+  img8,
   auto1,
   auto2,
   plac1,

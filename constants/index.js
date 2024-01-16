@@ -4,6 +4,8 @@ import {
   img4,
   img5,
   img6,
+  img7,
+  img8,
   sala1,
   sala2,
   sala3,
@@ -105,6 +107,8 @@ export const imgCaruzela = [
   { imgURL: img4, alt: "Zdjęcie 3" },
   { imgURL: img5, alt: "Zdjęcie 4" },
   { imgURL: img6, alt: "Zdjęcie 5" },
+  { imgURL: img7, alt: "Zdjęcie 6" },
+  { imgURL: img8, alt: "Zdjęcie 7" },
 ];
 
 export const imgPlac = [

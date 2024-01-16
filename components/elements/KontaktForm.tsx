@@ -185,7 +185,7 @@ const KontaktForm = () => {
                     required={true}
                   />
                 </div>
-                <Collapsible>
+                <Collapsible className="mt-3">
                   <div className="flex items-center">
                     <CollapsibleTrigger>
                       <Checkbox id="terms" required={true} />

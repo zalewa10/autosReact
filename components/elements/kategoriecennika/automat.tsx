@@ -1,12 +1,18 @@
 import React from "react";
 import { ceny } from "@/constants/cennik";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const Automat = () => {
   return (
     <div className="grid py-10 gap-10 grid-cols-1 md:grid-cols-2">
       {ceny["Skrzynia Automatyczna"].map((value, key) => (
-        <Card key={key} className={`max-w-[350px]`}>
+        <Card key={key} className={`max-w-[350px] md:max-w-[400px]`}>
           <CardHeader>
             <CardTitle>
               <p className="mb-4 text-xl font-semibold text-gray-700">
@@ -45,7 +51,7 @@ const Automat = () => {
               {value.express && (
                 <ul>
                   {value.express.map((item, key) => (
-                    <li className="flex items-start space-x-2" key={key}>
+                    <li className="flex items-start space-x-2 mt-4" key={key}>
                       <svg
                         className="flex-shrink-0 w-5 h-5 text-red-500 dark:text-red-400"
                         fill="currentColor"
@@ -70,6 +76,10 @@ const Automat = () => {
                 </ul>
               )}
             </ul>
+            <span className="text-base  flex justify-center text-center font-light">
+              {value.autoOpis} <br />
+              {value.auto}
+            </span>
           </CardContent>
         </Card>
       ))}

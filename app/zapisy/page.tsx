@@ -7,7 +7,7 @@ import React from "react";
 
 const Zapisy = () => {
   return (
-    <section className="bg-secondary">
+    <section className="bg-gray-50">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <Card>
           <CardHeader>
