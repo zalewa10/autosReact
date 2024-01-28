@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="max-w-[1440px] mx-auto">
       <body className={inter.className}>
         <Data />
         <Navbar />

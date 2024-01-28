@@ -1,6 +1,7 @@
 import React from "react";
 import { ceny } from "@/constants/cennik";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Manual = () => {
   return (
@@ -15,7 +16,7 @@ const Manual = () => {
             }`}
           >
             <p className="text-white text-center rounded-xl py-1 px-2 bg-firma">
-              Najczęściej wybierany
+              Najchętniej wybierany
             </p>
           </div>
 
@@ -88,6 +89,7 @@ const Manual = () => {
                   </ul>
                 )}
               </ul>
+
               <span className="text-base  flex justify-center text-center font-light">
                 {value.autoOpis} <br />
                 {value.auto}

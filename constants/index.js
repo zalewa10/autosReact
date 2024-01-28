@@ -21,7 +21,7 @@ import {
 export const data = [{ data: "14 stycznia 2024" }];
 
 export const routes = [
-  { label: "Główna", href: "/" },
+  { label: "Home", href: "/" },
   { label: "Cennik", href: "/cennik" },
   { label: "Galeria", href: "/galeria" },
   { label: "Kadra", href: "/kadra" },
@@ -64,12 +64,12 @@ export const product = [
     imgURL: "/ikonki/traffic-cone.png",
     name: "Własny plac manewrowy",
     subtext:
-      "W naszej szkole oferujemy wszystko w jednym miejscu, zarówno plac manewrowy jak i sala wykładowa znajdują się w Skórzewie.",
+      "Atutem naszego ośrodka jest profesjonalnie przygotowany plac manewrowy, co wpływa na komfort, efektywność i jakość szkolenia.",
   },
 ];
 
 export const onas = [
-  { imgURL: "ikonki/Tick.svg", text: "Szkolimy od 19 lat" },
+  { imgURL: "ikonki/Tick.svg", text: "Szkolimy od 20 lat" },
   {
     imgURL: "ikonki/Tick.svg",
     text: "Należymy do szkół o najwyższej zdawalności",
@@ -102,12 +102,12 @@ export const footerText = [
 ];
 
 export const imgCaruzela = [
+  { imgURL: img7, alt: "Zdjęcie 6" },
   { imgURL: img2, alt: "Zdjęcie 1" },
   { imgURL: img3, alt: "Zdjęcie 2" },
   { imgURL: img4, alt: "Zdjęcie 3" },
   { imgURL: img5, alt: "Zdjęcie 4" },
   { imgURL: img6, alt: "Zdjęcie 5" },
-  { imgURL: img7, alt: "Zdjęcie 6" },
   { imgURL: img8, alt: "Zdjęcie 7" },
 ];
 
