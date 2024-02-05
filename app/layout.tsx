@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Data from "@/components/Data";
 import Footer from "@/components/Footer";
+import Ukraina from "@/components/Ukraina";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
       <body className={inter.className}>
+        <Ukraina />
         <Data />
         <Navbar />
         {children}
@@ -27,3 +29,4 @@ export default function RootLayout({
     </html>
   );
 }
+``;
