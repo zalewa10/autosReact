@@ -19,6 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="max-w-[1440px] mx-auto">
+      <meta
+        name="google-site-verification"
+        content="lChrf4R4smlYnl2HUIpK_azfQoVLO3ts4bzBtBrEGAw"
+      />
       <body className={inter.className}>
         <Ukraina />
         <Data />
