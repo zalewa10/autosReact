@@ -67,6 +67,10 @@ export function CustomForm() {
   const [showConfetti, setShowConfetti] = useState(false);
   const { toast } = useToast();
 
+  const handleKursChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setForm({ ...form, kurs: e.target.value });
+  };
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -95,6 +99,8 @@ export function CustomForm() {
     e.preventDefault();
     setLoading(true);
 
+    console.log("Form Data:", form);
+
     if (!jeden || !dwa || !trzy) {
       console.error("Variable 'jeden' is undefined.");
       setLoading(false);
@@ -108,10 +114,13 @@ export function CustomForm() {
         dwa,
         {
           from_name: form.name,
-          to_name: "Auto-S OSK",
+          from_surname: form.surname,
+          from_address: form.adress,
+          from_city: form.city,
+          from_kurs: form.kurs,
           from_email: form.email,
-          to_email: "zalewastriker10@gmail.com",
-          message: form.message,
+          from_tel: form.tel,
+          from_message: form.message,
         },
         trzy
       )
@@ -233,22 +242,29 @@ export function CustomForm() {
 
           <div className="w-full md:w-auto mt-3 md:mt-0">
             <Label htmlFor="kurs">Wybrany kurs</Label>
-            <Select required={true}>
-              <SelectTrigger>
-                <SelectValue placeholder="Wybierz kurs z listy" id="kurs" />
-              </SelectTrigger>
-              <SelectContent>
-                {options.map((option, index) =>
-                  option && !option.includes("disabled") ? (
-                    <SelectItem key={index} value={option}>
-                      {option}
-                    </SelectItem>
-                  ) : (
-                    <Separator className="my-3" key={index} />
-                  )
-                )}
-              </SelectContent>
-            </Select>
+            <select
+              id="kurs"
+              name="kurs"
+              value={form.kurs}
+              onChange={(e) => handleKursChange(e)}
+              required
+              className="block w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            >
+              <option value="" disabled>
+                Wybierz kurs z listy
+              </option>
+              {options.map((option, index) =>
+                option && !option.includes("disabled") ? (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ) : (
+                  <option key={index} disabled>
+                    {/* Placeholder for disabled options */}
+                  </option>
+                )
+              )}
+            </select>
           </div>
 
           <div className="w-full md:w-auto mt-3 md:mt-0">

@@ -18,7 +18,7 @@ import {
 import { Checkbox } from "../ui/checkbox";
 
 const jeden = process.env.NEXT_PUBLIC_JEDEN;
-const dwa = process.env.NEXT_PUBLIC_DWA;
+const dwa = process.env.NEXT_PUBLIC_CZTERY;
 const trzy = process.env.NEXT_PUBLIC_TRZY;
 
 const ConfettiContainer = styled.div`
@@ -85,10 +85,9 @@ const KontaktForm = () => {
         dwa,
         {
           from_name: form.name,
-          to_name: "Auto-S OSK",
+          from_surname: form.surname,
           from_email: form.email,
-          to_email: "zalewastriker10@gmail.com",
-          message: form.message,
+          from_message: form.message,
         },
         trzy
       )

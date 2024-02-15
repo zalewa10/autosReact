@@ -1,3 +1,4 @@
+"use client";
 import { CustomForm } from "@/components/ProfileForm";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Toaster } from "@/components/ui/toaster";
