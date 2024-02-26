@@ -9,10 +9,7 @@ const Ukraina = () => {
             Informacje o egzaminie państwowym w języku Ukraińskim
           </h2>
           <p className="mt-10 font-normal text-gray-500 sm:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
-            porro nam quidem sunt, harum asperiores laboriosam itaque odit eum!
-            Illo, sapiente. Asperiores iste fuga labore quisquam eum quos atque
-            molestias?
+            Więcej informacji wkrótce
           </p>
         </div>
       </div>

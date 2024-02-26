@@ -11,7 +11,7 @@ const Ukraina = () => {
           <Image src={flaga} className="w-5 border-black" alt="Flaga Ukrainy" />
           <Link href={"/ukraina"}>
             <p className="text-blue-700 underline underline-offset-4">
-              Інформація для <b>українців</b>
+              Інформація для людей з <b>України</b>
             </p>
           </Link>
           <Image src={flaga} className="w-5 border-black" alt="Flaga Ukrainy" />
