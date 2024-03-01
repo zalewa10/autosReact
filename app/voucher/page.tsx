@@ -14,7 +14,7 @@ const Voucher = () => {
           </p>
         </div>
         <img
-          src="ikonki/voucher2.png"
+          src="/ikonki/voucher2.png"
           className="mx-auto text-center mb-8 lg:mb-12"
         />
       </div>

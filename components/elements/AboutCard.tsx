@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -15,7 +14,7 @@ const AboutCard = () => {
       {product.map((route, index) => (
         <Card className="bg-transparent border-gray-400" key={index}>
           <CardHeader>
-            <Image src={route.imgURL} alt="Image" width={50} height={50} />
+            <img src={route.imgURL} alt="Image" width={50} height={50} />
           </CardHeader>
           <CardContent>
             <CardTitle className="text-white text-base">{route.name}</CardTitle>

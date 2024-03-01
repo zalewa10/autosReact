@@ -2,8 +2,6 @@
 import { CustomForm } from "@/components/ProfileForm";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Toaster } from "@/components/ui/toaster";
-import { szefito } from "@/public/galeria";
-import Image from "next/image";
 import React from "react";
 
 const Zapisy = () => {
@@ -22,8 +20,8 @@ const Zapisy = () => {
               <CustomForm />
             </div>
             <div className="lg:w-1/2">
-              <Image
-                src={szefito}
+              <img
+                src="/galeria/szefito.jpg"
                 alt="Szef AUTO-S - Sławomir Pługowski"
                 className="hidden lg:block w-auto ml-auto rounded-xl"
               />

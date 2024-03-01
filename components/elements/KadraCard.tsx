@@ -1,14 +1,6 @@
 import React from "react";
 import { kadra } from "@/constants/kadra";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
-import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 const KadraCard = () => {
   return (
@@ -16,7 +8,7 @@ const KadraCard = () => {
       {kadra.map((value, key) => (
         <Card key={key}>
           <CardHeader>
-            <Image src={value.imgURL} alt={value.imie} />
+            <img src={value.imgURL} alt={value.imie} />
           </CardHeader>
           <CardContent>
             {value.rola ? "Właściciel" : <br />}

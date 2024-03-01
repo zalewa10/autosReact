@@ -4,8 +4,6 @@ import Automat from "./elements/kategoriecennika/automat";
 import B1 from "./elements/kategoriecennika/b1";
 import Dodatki from "./elements/kategoriecennika/dodatki";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
-import { pkk, przelew } from "@/public/ikonki";
 import { Separator } from "./ui/separator";
 const Cennik = () => {
   return (
@@ -69,8 +67,8 @@ const Cennik = () => {
           </div>
 
           <div className="hidden w-1/3 md:flex justify-end">
-            <Image
-              src={przelew}
+            <img
+              src="/ikonki/przelew.png"
               className="h-auto w-auto"
               alt="Zdjęcie przykładowego przelewu"
             />
@@ -97,8 +95,8 @@ const Cennik = () => {
               </p>
             </div>
             <div className="hidden w-1/3 md:flex justify-start">
-              <Image
-                src={pkk}
+              <img
+                src="/ikonki/pkk.jpg"
                 alt="Samochód szkoleniowy AUTO-S"
                 className="w-auto h-auto rounded-xl"
               />
