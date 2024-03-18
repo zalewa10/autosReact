@@ -38,7 +38,7 @@ export default function RootLayout({
       ></meta>
       <meta
         name="google-site-verification"
-        content="lChrf4R4smlYnl2HUIpK_azfQoVLO3ts4bzBtBrEGAw"
+        content="NZmaj2wkohJ7x56Fx_cDSSreflUnEtJT5Al2nT9locE"
       />
       <body className={inter.className}>
         <Ukraina />
