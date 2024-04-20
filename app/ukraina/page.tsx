@@ -8,8 +8,8 @@ const Ukraina = () => {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             ІНФОРМАЦІЯ ДЛЯ ОСІБ З УКРАЇНИ{" "}
           </h2>
-          <div className="w-full flex justify-center items-center">
-            <p className="mt-10 font-normal text-gray-500 sm:text-xl w-2/3">
+          <div className="w-full mx-auto">
+            <p className="mt-10 font-normal text-gray-500 sm:text-xl lg:w-2/3 mx-auto">
               У СІЧНІ 2024 РОКУ, У ПОЛЬЩІ ВВЕДЕНО МОЖЛИВІСТЬ ВИВЧЕННЯ ТЕОРІЇ ТА
               СКЛАДАННЯ ДЕРЖАВНОГО ТЕОРЕТИЧНОГО ЕКЗАМЕНУ НА УКРАЇНСЬКІЙ МОВІ.{" "}
               <br /> <br />

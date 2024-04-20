@@ -26,8 +26,9 @@ export const routes = [
   { label: "Galeria", href: "/galeria" },
   { label: "Kadra", href: "/kadra" },
   { label: "Voucher", href: "/voucher" },
-  { label: "Zapisy", href: "/zapisy" },
   { label: "Kontakt", href: "/kontakt" },
+  { label: "Praca", href: "/praca" },
+  { label: "Zapisy", href: "/zapisy" },
 ];
 export const mainInfo = [
   {

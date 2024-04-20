@@ -3,7 +3,7 @@ export const ceny = {
     {
       name: "Kurs Podstawowy",
       price: "3350zł",
-      auto: "KIA RIO",gi
+      auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
         "Badania lekarskie - na miejscu",
