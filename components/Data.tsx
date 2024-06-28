@@ -5,11 +5,15 @@ const Data = () => {
   return (
     <div className="bg-firma py-2 text-lg md:text-xl">
       <div className="text-center text-white font-lg">
-        {data.map((value, i) => (
+        {/* {data.map((value, i) => (
           <p key={i}>
             Najbliższy kurs - <b>{value.data}r</b>
           </p>
-        ))}
+        ))} */}
+        <p>
+          Zapisy na czerwiec skończone. Więcej informacji o kolejnych kursach
+          wkrótce.
+        </p>
       </div>
     </div>
   );
