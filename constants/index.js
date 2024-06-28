@@ -18,11 +18,7 @@ import {
   plac4,
 } from "@/public/galeria/index";
 
-export const data = [
-  {
-    data: "Zapisy na czerwiec zamknięte. Więcej informacji o kolejnych zapisach wkrótce",
-  },
-];
+export const data = [{ data: "29 czerwca 2024" }];
 
 export const routes = [
   { label: "Home", href: "/" },
