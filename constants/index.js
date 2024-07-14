@@ -18,7 +18,7 @@ import {
   plac4,
 } from "@/public/galeria/index";
 
-export const data = [{ data: "29 czerwca 2024" }];
+export const data = [{ data: "7 sierpnia 2024" }];
 
 export const routes = [
   { label: "Home", href: "/" },
@@ -99,6 +99,11 @@ export const footerText = [
   {
     label: "BIURO",
     opis: "Kontakt telefoniczny:\n\npon-pt 8:00 - 16:00\n\ntel. 668 987 001\n\nmail: kontakt@auto-s.pl",
+  },
+  {
+    label: "REGULAMIN",
+    opis: "Regulamin OSK AUTO-S",
+    href: "/regulamin",
   },
 ];
 

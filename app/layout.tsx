@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="max-w-[1440px] mx-auto">
+    <html lang="en" className="max-w-[1920px] mx-auto">
       <meta
         name="author"
         content="Ośrodek Szkolenia Kierowców AUTO-S - Sławomir Pługowski"

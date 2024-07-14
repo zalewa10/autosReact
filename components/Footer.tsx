@@ -6,19 +6,27 @@ const Footer = () => {
   return (
     <footer className="bg-tlo text-secondary-foreground px-8">
       <div className="mx-auto w-full py-6 lg:py-8">
-        <div className="md:flex md:justify-start gap-20">
+        <div className="md:flex md:justify-start md:flex-wrap gap-20">
           {footerText.map((item, index) => (
             <div key={index} className="mb-8">
               <h2 className="mb-4 text-base lg:text-lg font-semibold text-gray-100 uppercase">
                 {item.label}
               </h2>
-              <ul className="text-gray-300  font-base text-sm">
-                {item.opis.split("\n").map((line, lineIndex) => (
-                  <li key={lineIndex} className="mb-2">
-                    {line}
+              {item.href ? (
+                <ul className="text-gray-300  font-base text-sm">
+                  <li className="mb-2 hover:underline underline-offset-4">
+                    <a href={item.href}>{item.opis}</a>
                   </li>
-                ))}
-              </ul>
+                </ul>
+              ) : (
+                <ul className="text-gray-300  font-base text-sm">
+                  {item.opis.split("\n").map((line, lineIndex) => (
+                    <li key={lineIndex} className="mb-2">
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>

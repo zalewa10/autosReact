@@ -279,7 +279,7 @@ export function CustomForm() {
             />
           </div>
 
-          <div className="items-top flex mt-3 space-x-2">
+          <div className="mt-3 space-x-2">
             <Collapsible>
               <div className="flex items-center">
                 <CollapsibleTrigger>
@@ -289,19 +289,27 @@ export function CustomForm() {
                   htmlFor="terms"
                   className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ml-2"
                 >
-                  Zaznacz, aby zaakceptować
+                  Zaznacz, aby zaakceptować zgody i regulamin
                 </label>
               </div>
               <CollapsibleContent>
                 <p className="text-xs text-muted-foreground">
-                  Wyrażam zgodę na przetwarzanie przez OSK Auto-S Sławomir
+                  1. Wyrażam zgodę na przetwarzanie przez OSK Auto-S Sławomir
                   Pługowski z siedzibą w Skórzewie, ul. Jesienna 18, 60-185
                   Skórzewo, moich danych osobowych zawartych w formularzu
                   zgłoszenia w zakresie niezbędnym do zapisu na kurs prawa
                   jazdy. Podanie danych jest dobrowolne jednak ułatwia kontakt w
                   procesie rekrutacji. Przysługuje Pani/Panu prawo wglądu do
                   treści swoich danych osobowych i ich poprawiania oraz żądania
-                  zaprzestania ich przetwarzania.
+                  zaprzestania ich przetwarzania. <br />
+                  2. Zapoznałem się z{" "}
+                  <a
+                    href="/regulamin"
+                    className="text-red-500 hover:underline underline-offset-4"
+                  >
+                    regulaminem
+                  </a>
+                  .
                 </p>
               </CollapsibleContent>
             </Collapsible>

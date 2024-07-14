@@ -7,13 +7,9 @@ const Data = () => {
       <div className="text-center text-white font-lg">
         {data.map((value, i) => (
           <p key={i}>
-            Najbliższy kurs - {value.data}r.<b> Zostały 3 wolne miejsca!</b>
+            Najbliższy kurs - <b>{value.data}r.</b>
           </p>
         ))}
-        {/* <p>
-          Zapisy na czerwiec skończone. Więcej informacji o kolejnych kursach
-          wkrótce.
-        </p> */}
       </div>
     </div>
   );
