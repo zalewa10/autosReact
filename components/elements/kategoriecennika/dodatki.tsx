@@ -27,8 +27,11 @@ const Dodatki = () => {
               <span className="mr-2 text-xl font-normal">{value.czas}</span>
             </div>
           </CardHeader>
+          {/* <CardFooter>
+            <p className="font-light w-full">{value.status}</p>
+          </CardFooter> */}
           <CardFooter>
-            <p className="font-light">{value.features}</p>
+            <p className="font-light w-full">{value.features}</p>
           </CardFooter>
         </Card>
       ))}

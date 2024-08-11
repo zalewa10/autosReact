@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { routes } from "@/constants/index";
 import { logoPc } from "@/public/ikonki/index";
 import Image from "next/image";
@@ -18,6 +18,12 @@ interface Route {
 
 const Navbar: React.FC = () => {
   const pathname = usePathname();
+  const [activePath, setActivePath] = useState<string>("");
+
+  useEffect(() => {
+    // Set the active path whenever the pathname changes
+    setActivePath(pathname);
+  }, [pathname]);
 
   return (
     <header className="sm:flex sm:justify-between py-1 border-b w-full px-8 md:px-10">
@@ -26,14 +32,14 @@ const Navbar: React.FC = () => {
           <Image src={logoPc} className="h-7 md:h-9 w-auto" alt="Logo" />
         </Link>
 
-        <nav className="space-x-4  lg:space-x-1 hidden lg:block ml-auto">
+        <nav className="space-x-4 lg:space-x-1 hidden lg:block ml-auto">
           {routes.map((route: Route, i: number) => (
             <Button asChild variant="ghost" size={"default"} key={i}>
               <Link
                 href={route.href}
-                className={`text-xl  font-medium transition-colors ${
-                  pathname === route.href
-                    ? " underline underline-offset-4 font-semibold"
+                className={`text-xl font-medium transition-colors ${
+                  activePath === route.href
+                    ? "underline underline-offset-4 font-semibold"
                     : ""
                 }`}
               >
@@ -55,7 +61,9 @@ const Navbar: React.FC = () => {
                     key={i}
                     href={route.href}
                     className={`block px-2 py-1 text-lg ${
-                      pathname === route.href ? "text-firma font-semibold " : ""
+                      activePath === route.href
+                        ? "text-firma font-semibold"
+                        : ""
                     }`}
                   >
                     {route.label}

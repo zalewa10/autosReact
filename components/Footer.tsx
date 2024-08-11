@@ -12,21 +12,21 @@ const Footer = () => {
               <h2 className="mb-4 text-base lg:text-lg font-semibold text-gray-100 uppercase">
                 {item.label}
               </h2>
-              {item.href ? (
+              {/* {item.href ? (
                 <ul className="text-gray-300  font-base text-sm">
                   <li className="mb-2 hover:underline underline-offset-4">
                     <a href={item.href}>{item.opis}</a>
                   </li>
                 </ul>
-              ) : (
-                <ul className="text-gray-300  font-base text-sm">
-                  {item.opis.split("\n").map((line, lineIndex) => (
-                    <li key={lineIndex} className="mb-2">
-                      {line}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              ) : ( */}
+              <ul className="text-gray-300  font-base text-sm">
+                {item.opis.split("\n").map((line, lineIndex) => (
+                  <li key={lineIndex} className="mb-2">
+                    {line}
+                  </li>
+                ))}
+              </ul>
+              {/* )} */}
             </div>
           ))}
         </div>
