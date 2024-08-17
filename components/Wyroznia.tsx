@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./ui/container";
 import AboutCard from "./elements/AboutCard";
+import { Http2ServerRequest } from "http2";
 
 export const Wyroznia = () => {
   return (
@@ -8,9 +9,9 @@ export const Wyroznia = () => {
       <Container>
         <div className="flex flex-col md:flex-row items-center w-full">
           <div className="flex flex-col items-start gap-6 w-full">
-            <h1 className="scroll-m-20 text-left text-4xl font-extrabold tracking-tight lg:text-6xl w-full text-muted">
+            <h2 className="scroll-m-20 text-left text-3xl font-extrabold tracking-tight lg:text-5xl w-full text-muted">
               Co nas wyróżnia:
-            </h1>
+            </h2>
             <AboutCard />
           </div>
         </div>

@@ -25,10 +25,18 @@ export const routes = [
   { label: "Cennik", href: "/cennik" },
   { label: "Galeria", href: "/galeria" },
   { label: "Kadra", href: "/kadra" },
-  { label: "Voucher", href: "/voucher" },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "Praca", href: "/praca" },
+];
+export const routesmob = [
+  { label: "Home", href: "/" },
+  { label: "Cennik", href: "/cennik" },
+  { label: "Galeria", href: "/galeria" },
+  { label: "Kadra", href: "/kadra" },
+  { label: "Kontakt", href: "/kontakt" },
   { label: "Zapisy", href: "/zapisy" },
+  { label: "Ukraina", href: "/ukraina" },
+  { label: "Praca", href: "/praca" },
+  { label: "Voucher", href: "/voucher" },
 ];
 
 export const mainInfo = [

@@ -41,9 +41,10 @@ export default function RootLayout({
         content="NZmaj2wkohJ7x56Fx_cDSSreflUnEtJT5Al2nT9locE"
       />
       <body className={inter.className}>
-        <Ukraina />
+        {/* <Ukraina /> */}
         <Data />
         <Navbar />
+        {/* <div className="pt-[110px]"></div> */}
         {children}
         <Footer />
       </body>

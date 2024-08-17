@@ -1,16 +1,21 @@
 "use client";
+import Aktualnosc from "@/components/Aktualnosc";
 import { Features } from "@/components/Features";
 import Hero from "@/components/Hero";
 import { Onas } from "@/components/Onas";
 import { Wyroznia } from "@/components/Wyroznia";
 import PigeonMap from "@/components/elements/Mapa";
+import { Separator } from "@/components/ui/separator";
 import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   return (
     <div>
       <Hero />
+
       <Wyroznia />
+      <Aktualnosc />
+      <Separator className="max-w-screen-xl mx-auto opacity-50" />
       <Features />
       <PigeonMap />
       <Onas />

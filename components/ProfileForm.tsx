@@ -289,7 +289,7 @@ export function CustomForm() {
                   htmlFor="terms"
                   className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ml-2"
                 >
-                  Zaznacz, aby zaakceptować zgody
+                  Zaznacz, aby zaakceptować zgody i regulamin
                 </label>
               </div>
               <CollapsibleContent>
@@ -302,13 +302,13 @@ export function CustomForm() {
                   procesie rekrutacji. Przysługuje Pani/Panu prawo wglądu do
                   treści swoich danych osobowych i ich poprawiania oraz żądania
                   zaprzestania ich przetwarzania. <br />
-                  {/* 2. Zapoznałem się z{" "}
+                  2. Zapoznałem się z{" "}
                   <a
                     href="/regulamin"
                     className="text-red-500 hover:underline underline-offset-4"
                   >
                     regulaminem
-                  </a> */}
+                  </a>
                 </p>
               </CollapsibleContent>
             </Collapsible>

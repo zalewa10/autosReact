@@ -2,14 +2,23 @@
 
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import { routes } from "@/constants/index";
+import { routes, routesmob } from "@/constants/index";
 import { logoPc } from "@/public/ikonki/index";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
-import { DropdownMenuSeparator } from "./ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 interface Route {
   label: string;
@@ -21,7 +30,6 @@ const Navbar: React.FC = () => {
   const [activePath, setActivePath] = useState<string>("");
 
   useEffect(() => {
-    // Set the active path whenever the pathname changes
     setActivePath(pathname);
   }, [pathname]);
 
@@ -32,7 +40,7 @@ const Navbar: React.FC = () => {
           <Image src={logoPc} className="h-7 md:h-9 w-auto" alt="Logo" />
         </Link>
 
-        <nav className="space-x-4 lg:space-x-1 hidden lg:block ml-auto">
+        <nav className="space-x-4 lg:space-x-1 hidden lg:block mx-auto">
           {routes.map((route: Route, i: number) => (
             <Button asChild variant="ghost" size={"default"} key={i}>
               <Link
@@ -47,7 +55,54 @@ const Navbar: React.FC = () => {
               </Link>
             </Button>
           ))}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                className="text-xl font-medium"
+                variant="ghost"
+                size={"default"}
+              >
+                Więcej
+                <ChevronDownIcon
+                  className="relative top-[1px] ml-1 h-4 w-4"
+                  aria-hidden="true"
+                />
+              </Button>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link
+                  href="/voucher"
+                  className={`text-xl font-medium transition-colors w-full h-full`}
+                >
+                  Voucher
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/praca"
+                  className={`text-xl font-medium transition-colors w-full h-full`}
+                >
+                  Praca
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/ukraina"
+                  className={`text-xl font-medium transition-colors w-full h-full`}
+                >
+                  Ukraina
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
+        <Button asChild className="bg-firma hidden lg:block">
+          <Link className="text-[18px]" href="/zapisy">
+            Zapisz się
+          </Link>
+        </Button>
 
         <div className="flex items-center lg:hidden ml-auto">
           <Sheet>
@@ -56,7 +111,7 @@ const Navbar: React.FC = () => {
             </SheetTrigger>
             <SheetContent side="right" className={`w-[300px] sm:w-[400px]`}>
               <nav className="flex flex-col gap-4 pt-5">
-                {routes.map((route: Route, i: number) => (
+                {routesmob.map((route: Route, i: number) => (
                   <a
                     key={i}
                     href={route.href}

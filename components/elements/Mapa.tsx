@@ -36,7 +36,7 @@ const points: Point[] = [
   },
   {
     id: 5,
-    name: "Batorowo - parking stacja BP Bukowska",
+    name: "Batorowo - parking stacja Avia Bukowska",
     latitude: 52.413252,
     longitude: 16.764589,
   },
@@ -115,7 +115,7 @@ export default function PigeonMap() {
     }
   }, [mapActive]);
   return (
-    <main className="pb-10 px-8 w-full mt-3 ">
+    <main className="pb-10 px-8 w-full mt-3 max-w-screen-xl mx-auto">
       <div className="flex flex-col md:flex-row items-start gap-6 ">
         <Card className="lg:h-[400px] flex flex-col relative md:flex-row w-full">
           <div className="relative md:w-1/2">
