@@ -98,11 +98,11 @@ const Navbar: React.FC = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>
-        <Button asChild className="bg-firma hidden lg:block">
-          <Link className="text-[18px]" href="/zapisy">
+        <Link href={"/zapisy"} className="hidden lg:block">
+          <Button size={"lg"} className="bg-firma text-lg">
             Zapisz się
-          </Link>
-        </Button>
+          </Button>
+        </Link>
 
         <div className="flex items-center lg:hidden ml-auto">
           <Sheet>

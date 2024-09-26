@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 const Aktualnosc = () => {
   return (
-    <main className="p-20">
+    <main className="p-10 md:p-20">
       {/* <div className="relative max-w-screen-lg mx-auto h-96">
         <Image
           src="galeria/plac1.jpg"
@@ -36,7 +36,7 @@ const Aktualnosc = () => {
         </div>
       </div> */}
 
-      <div className="flex flex-col-reverse md:flex-row gap-10 justify-center relative md:max-w-screen-xl mx-auto px-10 pt-20">
+      <div className="flex flex-col-reverse md:flex-row gap-10 justify-center relative md:max-w-screen-xl mx-auto md:px-10 md:pt-20">
         <div className="mt-20 md:mt-0 block min-w-[250px] min-h-[250px] md:min-w-[350px] md:min-h-[350px] aspect-square relative rounded-lg bg-gray-100">
           <Image
             src="./test/maturzysta.png"
