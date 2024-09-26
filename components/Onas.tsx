@@ -33,8 +33,7 @@ export const Onas = () => {
             Doświadczenie w nauce jazdy od 2004 roku
           </h2>
           <p>
-            Szkoła jazdy Auto-S działa na rynku szkoleń od ponad 20 lat oferując
-            profesjonalne przyugotowanie do jazd.
+            Auto-S działa na rynku od 20 lat oferując profesjonalne szkolenia.
           </p>
           <ul className="pl-4 pt-2">
             <li className="list-disc">
@@ -76,10 +75,10 @@ export const Onas = () => {
             Autorska ścieżka zadań
           </h2>
           <p>
-            W Auto-S solidna praktyka to podstawa, dlatego chcielibysmy Was
-            zaproisć do zapoznania się z naszą autorską ścieżką zadań dzięki
-            której żadna sytuacja na drodze czy placu manewrowym was nie
-            zaskoczy.
+            W Auto-S solidna praktyka to podstawa, dlatego chcielibyśmy Was
+            zaprosić do zapoznania się z naszą autorską ścieżką zadań dzięki,
+            której żadna sytuacja na drodze czy placu manewrowym nie będzie
+            zaskoczeniem.
           </p>
         </div>
       </div>

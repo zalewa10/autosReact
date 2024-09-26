@@ -58,9 +58,7 @@ const Aktualnosc = () => {
             szybko i sprawnie, nie rezygnując z przygotowań do matury.
           </p>
           <Link href="/cennik">
-            <Button variant={"destructive"} className="mt-5">
-              Sprawdź naszą ofertę
-            </Button>
+            <Button className="bg-firma  mt-5">Sprawdź naszą ofertę</Button>
           </Link>
         </div>
       </div>

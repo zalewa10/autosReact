@@ -13,7 +13,7 @@ const Praca = () => {
             <p className="mt-10 font-normal text-gray-500 sm:text-xl lg:w-2/3 mx-auto">
               Niezależnie od tego, czy dopiero ukończyłeś/aś kurs, czy masz już
               doświadczenie, dołącz do naszego zespołu. Oferujemy dynamiczną
-              pracę i możliwość rozwijania umiejetności w przyjaznym środowisku.
+              pracę i możliwość rozwijania umiejętności w przyjaznym środowisku.
               <br /> <br />
               <span>
                 <b>

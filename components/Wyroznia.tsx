@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "./ui/container";
 import AboutCard from "./elements/AboutCard";
-import { Http2ServerRequest } from "http2";
 
 export const Wyroznia = () => {
   return (
