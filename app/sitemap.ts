@@ -1,54 +1,60 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from "next";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://autos-react.vercel.app',
+      url: "https://auto-s.pl",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: 'https://autos-react.vercel.app/cennik',
+      url: "https://auto-s.pl/cennik",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: 'https://autos-react.vercel.app/galeria',
+      url: "https://auto-s.pl/galeria",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://autos-react.vercel.app/kadra',
+      url: "https://auto-s.pl/praca",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://autos-react.vercel.app/kontakt',
+      url: "https://auto-s.pl/kadra",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://autos-react.vercel.app/ukraina',
+      url: "https://auto-s.pl/kontakt",
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://autos-react.vercel.app/voucher',
+      url: "https://auto-s.pl/ukraina",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: 'https://autos-react.vercel.app/zapisy',
+      url: "https://auto-s.pl/voucher",
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: "https://auto-s.pl/zapisy",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
       priority: 0.8,
     },
-  ]
+  ];
 }

@@ -29,6 +29,22 @@ const Footer = () => {
               {/* )} */}
             </div>
           ))}
+          <div className="mb-8">
+            <h2 className="mb-4 text-base lg:text-lg font-semibold text-gray-100 uppercase">
+              Regulaminy
+            </h2>
+            <ul className="text-gray-300  font-base text-sm">
+              <li className="mb-2">
+                <a
+                  href="/files/regulamin.pdf"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Regulamin OSK
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
@@ -42,7 +58,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="https://kzalewski.vercel.app"
+              href="#"
               target="_onBlank"
               className="text-white hover:text-blue-400"
             >

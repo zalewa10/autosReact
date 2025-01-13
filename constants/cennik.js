@@ -2,7 +2,7 @@ export const ceny = {
   "Skrzynia Manualna": [
     {
       name: "Kurs Podstawowy",
-      price: "3500zł",
+      price: "3600zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -17,7 +17,7 @@ export const ceny = {
     },
     {
       name: "Kurs Rozszerzony",
-      price: "3800zł",
+      price: "3900zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -33,7 +33,7 @@ export const ceny = {
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
-      price: "4300zł",
+      price: "4400zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -55,7 +55,7 @@ export const ceny = {
   "Posiadacze kat. B1": [
     {
       name: "Kurs podstawowy - skrzynia manualna",
-      price: "2400zł",
+      price: "2500zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -67,7 +67,7 @@ export const ceny = {
     },
     {
       name: "Kurs podstawowy – skrzynia automat",
-      price: "2600zł",
+      price: "2700zł",
       auto: "HYUNDAI i20",
       autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
@@ -82,7 +82,7 @@ export const ceny = {
   "Skrzynia Automatyczna": [
     {
       name: "Kurs Podstawowy",
-      price: "3700zł",
+      price: "3800zł",
       auto: "HYUNDAI i20",
       autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
@@ -99,7 +99,7 @@ export const ceny = {
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
-      price: "4300zł",
+      price: "4400zł",
       auto: "HYUNDAI i20",
       autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
@@ -127,25 +127,25 @@ export const ceny = {
     },
     {
       name: "1 godzina jazd",
-      price: "110zł",
+      price: "125zł",
       czas: "/ 60min",
       features: ["Płatność jednorazowa dla kursantów OSK Auto-S"],
     },
     {
       name: "1 godzina jazd",
-      price: "120zł",
+      price: "135zł",
       czas: "/ 60min",
       features: ["Płatność jednorazowa dla kursantów z zewnątrz"],
     },
     {
       name: "PAKIET - 10 dodatkowych jazd",
-      price: "1000zł",
+      price: "1150zł",
       czas: "/ 10x60min",
       features: ["Płatność jednorazowa dla kursantów OSK Auto-S"],
     },
     {
       name: "PAKIET - 10 dodatkowych jazd",
-      price: "1100zł",
+      price: "1250zł",
       czas: "/ 10x60min",
       features: ["Płatność jednorazowa dla kursantów z zewnątrz"],
     },

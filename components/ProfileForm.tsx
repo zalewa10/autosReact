@@ -304,7 +304,8 @@ export function CustomForm() {
                   zaprzestania ich przetwarzania. <br />
                   2. Zapoznałem się z{" "}
                   <a
-                    href="/regulamin"
+                    target="_blank"
+                    href="/files/regulamin.pdf"
                     className="text-red-500 hover:underline underline-offset-4"
                   >
                     regulaminem
