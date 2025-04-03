@@ -36,7 +36,7 @@ const Aktualnosc = () => {
         </div>
       </div> */}
 
-      <div className="flex flex-col-reverse md:flex-row gap-10 justify-center relative md:max-w-screen-xl mx-auto md:px-10 md:pt-20">
+      {/* <div className="flex flex-col-reverse md:flex-row gap-10 justify-center relative md:max-w-screen-xl mx-auto md:px-10 md:pt-20">
         <div className="mt-20 md:mt-0 block min-w-[250px] min-h-[250px] md:min-w-[350px] md:min-h-[350px] aspect-square relative rounded-lg bg-gray-100">
           <Image
             src="./test/maturzysta.png"
@@ -47,9 +47,9 @@ const Aktualnosc = () => {
           />
         </div>
 
-        <div className="block w-auto md:max-w-lg">
-          {/* <Badge variant={"destructive"}>Prawko + matura?</Badge> */}
-          <h2 className="my-4 text-4xl tracking-tight font-extrabold text-gray-900">
+        <div className="block w-auto md:max-w-lg"> */}
+      {/* <Badge variant={"destructive"}>Prawko + matura?</Badge> */}
+      {/* <h2 className="my-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Maturzysto! <br /> Zrób prawo jazdy przed maturą!
           </h2>
           <p>
@@ -59,6 +59,36 @@ const Aktualnosc = () => {
           </p>
           <Link href="/cennik">
             <Button className="bg-firma  mt-5">Sprawdź naszą ofertę</Button>
+          </Link>
+        </div>
+      </div> */}
+      <div className="flex flex-col-reverse md:flex-row gap-0 md:gap-10 justify-center items-center relative md:max-w-screen-xl mx-auto md:px-10 md:pt-0">
+        <div className="mt-10 md:mt-0 block w-full min-h-[450px] relative rounded-lg bg-gray-100">
+          <Image
+            src="./galeria/nowe_kia.png"
+            alt="Kia Rio"
+            width={400}
+            height={400}
+            quality={100}
+            priority
+            className="absolute w-full h-full bottom-0 right-0 left-0 top-0 object-cover object-left md:object-center rounded-lg"
+          />
+        </div>
+
+        <div className="block w-auto md:max-w-lg">
+          {/* <Badge variant={"destructive"}>04/04/2025</Badge> */}
+          <h2 className="my-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Lato tuż za rogiem, a my powiększamy flotę!
+          </h2>
+          <p>
+            Wakacje coraz bliżej, a my mamy dla Was świetną wiadomość! Do naszej
+            floty dołączyły dwie nowe Kia Rio, które już czekają na przyszłych
+            kierowców.
+          </p>
+          <Link href="/zapisy">
+            <Button className="bg-firma  mt-5">
+              Zapisz się na jazdy już dziś!
+            </Button>
           </Link>
         </div>
       </div>

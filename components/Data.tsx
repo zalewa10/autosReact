@@ -7,7 +7,7 @@ const Data = () => {
       <div className="text-center text-white font-lg">
         {data.map((value, i) => (
           <p key={i}>
-            Najbliższy kurs - <b>{value.data}r.</b>
+            Zapisy na kurs do <b>{value.data}r.</b>
           </p>
         ))}
       </div>

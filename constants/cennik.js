@@ -2,7 +2,7 @@ export const ceny = {
   "Skrzynia Manualna": [
     {
       name: "Kurs Podstawowy",
-      price: "3600zł",
+      price: "3700zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -17,7 +17,7 @@ export const ceny = {
     },
     {
       name: "Kurs Rozszerzony",
-      price: "3900zł",
+      price: "4000zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -33,7 +33,7 @@ export const ceny = {
     },
     {
       name: "Kurs Express - jazdy w 16 dni!",
-      price: "4400zł",
+      price: "4500zł",
       auto: "KIA RIO",
       autoOpis: "Egzamin państwowy na pojeździe WORD!",
       features: [
@@ -82,7 +82,7 @@ export const ceny = {
   "Skrzynia Automatyczna": [
     {
       name: "Kurs Podstawowy",
-      price: "3800zł",
+      price: "3900zł",
       auto: "HYUNDAI i20",
       autoOpis: "Egzamin państwowy na naszym pojeździe!",
       features: [
