@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { Map, Marker, Overlay } from "pigeon-maps";
 import { Card, CardTitle } from "../ui/card";

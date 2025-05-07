@@ -1,4 +1,4 @@
-// File: C:\Users\pilka\OneDrive\Desktop\Strony Internetowe\AUTO-S\autosReact\app\kadra\page.tsx
+// File: C:\.programowanie\Strony Internetowe\AUTO-S\autosReact\app\kadra\page.tsx
 import * as entry from '../../../../app/kadra/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

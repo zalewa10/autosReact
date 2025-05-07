@@ -1,9 +1,7 @@
 {
   "/page": "app/page.js",
-  "/kadra/page": "app/kadra/page.js",
-  "/zapisy/page": "app/zapisy/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/cennik/page": "app/cennik/page.js",
   "/kontakt/page": "app/kontakt/page.js",
-  "/ukraina/page": "app/ukraina/page.js"
+  "/kadra/page": "app/kadra/page.js",
+  "/galeria/page": "app/galeria/page.js",
+  "/cennik/page": "app/cennik/page.js"
 }

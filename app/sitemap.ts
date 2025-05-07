@@ -1,7 +1,10 @@
 import { MetadataRoute } from "next";
+import { getArticles } from "@/blog/metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const articles = getArticles();
+
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: "https://auto-s.pl",
       lastModified: new Date(),
@@ -56,5 +59,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: "https://auto-s.pl/blog",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
   ];
+
+  const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `https://auto-s.pl/blog/${article.slug}`,
+    lastModified: new Date(article.date),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...articleRoutes];
 }

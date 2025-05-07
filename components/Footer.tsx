@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-xs text-secondary sm:text-center ">
-            © 2024 {""}
+            © 2025 {""}
             <a href="https://auto-s.pl/" className="hover:underline">
               OŚRODEK SZKOLENIA KIEROWCÓW AUTO-S
             </a>

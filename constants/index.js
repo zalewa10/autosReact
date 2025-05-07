@@ -18,13 +18,14 @@ import {
   plac4,
 } from "@/public/galeria/index";
 
-export const data = [{ data: "16 kwietnia 2025" }];
+export const data = [{ data: "27 maja 2025" }];
 
 export const routes = [
   { label: "Home", href: "/" },
   { label: "Cennik", href: "/cennik" },
   { label: "Galeria", href: "/galeria" },
   { label: "Kadra", href: "/kadra" },
+  // { label: "Blog", href: "/blog" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 export const routesmob = [
@@ -32,6 +33,7 @@ export const routesmob = [
   { label: "Cennik", href: "/cennik" },
   { label: "Galeria", href: "/galeria" },
   { label: "Kadra", href: "/kadra" },
+  // { label: "Blog", href: "/blog" },
   { label: "Kontakt", href: "/kontakt" },
   { label: "Zapisy", href: "/zapisy" },
   { label: "Ukraina", href: "/ukraina" },

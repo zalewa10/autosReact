@@ -63,7 +63,7 @@ const Aktualnosc = () => {
         </div>
       </div> */}
       <div className="flex flex-col-reverse md:flex-row gap-0 md:gap-10 justify-center items-center relative md:max-w-screen-xl mx-auto md:px-10 md:pt-0">
-        <div className="mt-10 md:mt-0 block w-full min-h-[450px] relative rounded-lg bg-gray-100">
+        <div className="mt-10 md:mt-0 block w-full min-h-[200px] md:min-h-[450px] relative rounded-lg bg-gray-100">
           <Image
             src="./galeria/nowe_kia.png"
             alt="Kia Rio"
@@ -83,7 +83,7 @@ const Aktualnosc = () => {
           <p>
             Wakacje coraz bliżej, a my mamy dla Was świetną wiadomość! Do naszej
             floty dołączyły dwie nowe Kia Rio, które już czekają na przyszłych
-            kierowców.
+            kursantów.
           </p>
           <Link href="/zapisy">
             <Button className="bg-firma  mt-5">

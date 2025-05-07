@@ -1,4 +1,4 @@
-// File: C:\Users\pilka\OneDrive\Desktop\Strony Internetowe\AUTO-S\autosReact\app\page.tsx
+// File: C:\.programowanie\Strony Internetowe\AUTO-S\autosReact\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
