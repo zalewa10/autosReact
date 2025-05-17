@@ -6,12 +6,6 @@ export const kadra = [
     podpis: "Instruktor nauki jazdy / Wykładowca",
   },
   {
-    imgURL: "/instruktorzy/Jurek.jpg",
-    rola: "",
-    imie: "Jerzy",
-    podpis: "Instruktor nauki jazdy",
-  },
-  {
     imgURL: "/instruktorzy/Sebastian.jpg",
     rola: "",
     imie: "Sebastian",

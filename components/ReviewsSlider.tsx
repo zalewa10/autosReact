@@ -70,24 +70,26 @@ const ReviewsSlider = () => {
             <CarouselNext />
           </Carousel>
         </div>
-        {/* <Link
-          href={"https://g.page/r/CSpHW0L1TdH5EBM/review"}
-          className="w-full md:w-auto"
-        >
-          <Button size={"lg"} className="bg-firma text-lg">
-            Zostaw opinię
-          </Button>
-        </Link> */}
-        <Link
-          href={
-            "https://www.google.com/search?biw=1398&bih=1351&q=AUTO-S%20O%C5%9ARODEK%20SZKOLENIA%20KIEROWC%C3%93W%20Opinie&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxtDAwMDQyNbE0MDQ2NTK0MDezNNjAyPiKUdsxNMRfN1jB_-isIH8XV2-F4Chvfx9XP09HBW9P1yD_cOfDk8MV_Asy8zJTF7GSohoAHmh733cAAAA&rldimm=18001254901352187690&tbm=lcl&cs=1&hl=pl&sa=X&ved=0CBsQ9fQKKABqFwoTCOjmsqWJko0DFQAAAAAdAAAAABAG#lkt=LocalPoiReviews"
-          }
-          className="w-max block mx-auto"
-        >
-          <Button size={"lg"} className="bg-firma text-lg">
-            Spradź nasze opinie
-          </Button>
-        </Link>
+        <div className="flex gap-4 items-center justify-center">
+          <Link
+            href={
+              "https://www.google.com/search?biw=1398&bih=1351&q=AUTO-S%20O%C5%9ARODEK%20SZKOLENIA%20KIEROWC%C3%93W%20Opinie&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxtDAwMDQyNbE0MDQ2NTK0MDezNNjAyPiKUdsxNMRfN1jB_-isIH8XV2-F4Chvfx9XP09HBW9P1yD_cOfDk8MV_Asy8zJTF7GSohoAHmh733cAAAA&rldimm=18001254901352187690&tbm=lcl&cs=1&hl=pl&sa=X&ved=0CBsQ9fQKKABqFwoTCOjmsqWJko0DFQAAAAAdAAAAABAG#lkt=LocalPoiReviews"
+            }
+            className="w-max"
+          >
+            <Button size={"lg"} variant={"outline"} className="text-lg">
+              Sprawdź nasze opinie
+            </Button>
+          </Link>
+          <Link
+            href={"https://g.page/r/CSpHW0L1TdH5EBM/review"}
+            className="w-max"
+          >
+            <Button size={"lg"} className=" bg-firma  text-lg">
+              Zostaw opinię
+            </Button>
+          </Link>
+        </div>
       </div>
     </main>
   );

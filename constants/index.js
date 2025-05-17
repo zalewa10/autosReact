@@ -18,7 +18,7 @@ import {
   plac4,
 } from "@/public/galeria/index";
 
-export const data = [{ data: "27 maja 2025" }];
+export const data = [{ data: "28 maja 2025" }];
 
 export const routes = [
   { label: "Home", href: "/" },
